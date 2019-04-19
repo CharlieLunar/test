@@ -1,0 +1,50 @@
+* {margin:0; padding:0; }
+			li{list-style:none; }
+
+			#div1 {width:850px; height:500px; margin:50px auto; overflow:hidden; position:relative;}
+			#div1 ul li{height:500px;position: absolute;left: 0;top: 0;z-index: 0;}
+			#div1 ol {position:absolute;right: 10%;bottom: 10px;z-index:6}
+			#div1 ol li{width: 20px;height: 20px;background: #fff;margin-left: 5px;float: left;line-height: 20px;text-align: center;cursor: pointer;}
+			#div1 ol li.ac{background: red;color: #fff;z-index: 6;}
+			#div1>a{text-decoration: none;position: absolute;top: 50%;margin-top: -10px;height: 40px;line-height: 32px;text-align: center;width: 40px;font-size: 40px;vertical-align: middle;color: #fff;background: rgb(0,0,0);z-index:6;}
+			#goPrev{left: 0;}
+			#goNext{right: 0;}
+			img{width:850px; height:500px;}
+
+			#div1 ul li.ani{animation-name: play;animation-duration:2s;z-index: 5;}
+			#div1 ul li.ani1{animation-name: play1;animation-duration:2s;z-index: 5;}
+			#div1 ul li.reAni{animation-name: replay;animation-duration:2s;z-index: 5;}
+			#div1 ul li.reAni1{animation-name: replay1;animation-duration:2s;z-index: 5;}
+			@keyframes play{
+				from{
+					left: -100%;
+				}
+				to{
+					left: 0px;
+				}
+			}
+			@keyframes play1{
+				from{
+					left: 0;
+				}
+				to{
+					left: 100%;
+				}
+			}
+			@keyframes replay{
+				from{
+					left: 100%;
+				}
+				to{
+					left: 0px;
+				}
+			}
+			@keyframes replay1{
+				from{
+					left: 0;
+				}
+				to{
+					left: -100%;  
+				}
+			}
+			#div1 ul li.ac{z-index: 6;left: 0;}
